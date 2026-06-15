@@ -1,6 +1,6 @@
-﻿Film film1 = new Film("Inception", "Science Fiction", 148);
-Film film2 = new Film("The Shawshank Redemption", "Drama", 142);
-Film film3 = new Film("Spirited Away", "Animatie", 125);
+﻿Film film1 = new Film("Inception", "Science Fiction", 148, 13);
+Film film2 = new Film("The Shawshank Redemption", "Drama", 142, 16);
+Film film3 = new Film("Spirited Away", "Animatie", 125, 6);
 
 film1.Tooninfo();
 film2.Tooninfo();
@@ -11,13 +11,15 @@ class Film
     public string Titel;
     public string Genre;
     public int Duurtijd;
+    public int Leeftijdsgrens;
 
    
-    public Film(string titel, string genre, int duurtijd)
+    public Film(string titel, string genre, int duurtijd, int leeftijdsgrens)
     {
         Titel = titel;
         Genre = genre;
         Duurtijd = duurtijd;
+        Leeftijdsgrens = leeftijdsgrens;
     }
 
     
@@ -27,6 +29,7 @@ class Film
         Console.WriteLine($"Titel: {Titel}");
         Console.WriteLine($"Genre: {Genre}");
         Console.WriteLine($"Duurtijd: {Duurtijd} minuten");
+        Console.WriteLine($"Leeftijdsgrens: {Leeftijdsgrens} jaar");
         Console.WriteLine();
     }
 }
