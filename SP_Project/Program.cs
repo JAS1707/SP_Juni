@@ -25,7 +25,7 @@ class Film
     
     public void Tooninfo()
     {
-        Console.WriteLine("=== Filmgegevens ===");
+        Console.WriteLine("==== Filmgegevens ====");
         Console.WriteLine($"Titel: {Titel}");
         Console.WriteLine($"Genre: {Genre}");
         Console.WriteLine($"Duurtijd: {Duurtijd} minuten");
