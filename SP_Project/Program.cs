@@ -26,10 +26,10 @@ class Film
     public void Tooninfo()
     {
         Console.WriteLine("=== Filmgegevens ===");
-        Console.WriteLine($"Titel: {Titel}");
-        Console.WriteLine($"Genre: {Genre}");
-        Console.WriteLine($"Duurtijd: {Duurtijd} minuten");
-        Console.WriteLine($"Leeftijdsgrens: {Leeftijdsgrens} jaar");
+        Console.WriteLine($"De film heet '{Titel}'.");
+        Console.WriteLine($"Dit is een {Genre}-film.");
+        Console.WriteLine($"De film duurt {Duurtijd} minuten.");
+        Console.WriteLine($"De leeftijdsgrens voor deze film is {Leeftijdsgrens} jaar.");
         Console.WriteLine();
     }
 }
